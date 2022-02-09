@@ -1,3 +1,3 @@
 # movie-booking-app
 
-## just tryin to practice DOM manipulation and Local Storage
+## just trying to practice DOM manipulation and Local Storage
