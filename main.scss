@@ -1,0 +1,91 @@
+@import "reset";
+
+body {
+	font-family: "Poppins", sans-serif;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #242333;
+	color: white;
+}
+
+.select {
+	margin: 2rem 0;
+	select {
+		padding: 5px;
+		border-radius: 0.8rem;
+	}
+}
+
+.annotation {
+	background-color: #151422e0;
+	padding: 10px;
+	border-radius: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 20rem;
+	li {
+		display: flex;
+		gap: 5px;
+	}
+	.seat {
+		cursor: auto;
+		&:hover {
+			transform: scale(1);
+		}
+	}
+}
+
+.seat {
+	cursor: pointer;
+	margin: 3px 4px;
+	width: 1rem;
+	height: 0.8rem;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+	background-color: rgba(white, 0.2);
+	&.selected {
+		background-color: aqua;
+	}
+	&.occupied {
+		background-color: white;
+	}
+
+	&:nth-of-type(2) {
+		margin-right: 1rem;
+	}
+	&:nth-last-of-type(2) {
+		margin-left: 1rem;
+	}
+}
+
+.booking {
+	perspective: 1000px;
+	.screen {
+		width: 15rem;
+		height: 7rem;
+		background-color: white;
+		margin: 3rem auto;
+		transform: rotateX(-40deg);
+		box-shadow: 0 1rem 2rem rgba(white, 0.3);
+	}
+	.seats {
+		margin-bottom: 1rem;
+		.row {
+			display: flex;
+			justify-content: center;
+		}
+		.seat:not(.occupied):hover {
+			transform: scale(1.2);
+		}
+	}
+}
+
+.purchase {
+	span {
+		color: aqua;
+	}
+}
