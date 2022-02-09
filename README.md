@@ -1,3 +1,3 @@
-# movie-booking-app
+# movie-booking-app https://book-a-seat.netlify.app/
 
 ## just trying to practice DOM manipulation and Local Storage
